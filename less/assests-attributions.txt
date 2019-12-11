@@ -1,0 +1,22 @@
+profile pc: Photo by Peter G on Unsplash
+background: Photo by JJ Ying on UnsplashPhoto by JJ Ying on Unsplash
+
+
+//JS
+<i class="fab fa-js-square"></i>
+
+//React
+<i class="fab fa-react"></i>
+
+//Vue
+<i class="fab fa-vuejs"></i>
+
+//CSS 
+<i class="fab fa-css3-alt"></i>
+
+//LESS
+<i class="fab fa-less"></i>
+
+//Java
+<i class="fab fa-java"></i>
+
