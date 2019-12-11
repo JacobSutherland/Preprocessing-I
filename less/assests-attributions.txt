@@ -1,5 +1,7 @@
 profile pc: Photo by Peter G on Unsplash
 background: Photo by JJ Ying on UnsplashPhoto by JJ Ying on Unsplash
+tkyo: Photo by Jezael Melgoza on Unsplash
+forest: Photo by Filip Zrnzević on Unsplash
 
 
 //JS

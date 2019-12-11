@@ -129,6 +129,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html {
   font-size: 62.5%;
@@ -138,7 +139,68 @@ body {
   height: 100%;
   font-size: 1rem;
 }
-/* ========= General stlyes ========= */
 /*======== variables ========*/
 /*======= mixins =======*/
+/* ========= General stlyes ========= */
+header {
+  background-image: url('../images/forest.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 78%;
+  padding: 2%;
+}
+header nav {
+  margin: 2%;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav a {
+  font-size: 1.5rem;
+  color: #ccc9c9;
+  border: 1px solid white;
+  border-radius: 8%;
+  margin-right: 2%;
+  margin-top: 2%;
+  padding: 0.3%;
+  text-decoration: none;
+}
+header section {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1%;
+}
 /*========- specfic styles =========*/
+.wrapper {
+  margin: 3%;
+  border: 2px solid black;
+}
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20%;
+  line-height: 2;
+}
+.header-content p {
+  color: #ccc9c9;
+}
+.profile-image {
+  width: 30%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+}
+.profile-image img {
+  width: 100%;
+  border-radius: 50%;
+  margin-left: 10%;
+}
+.about-me {
+  border: 2px solid red;
+}
+.skills-container {
+  border: 2px solid red;
+}
+/* ===== Psuedo Styles */
+a:hover {
+  opacity: 0.5;
+}
