@@ -43,7 +43,6 @@ tt,
 var,
 b,
 u,
-i,
 center,
 dl,
 dt,
@@ -75,6 +74,7 @@ header,
 hgroup,
 menu,
 nav,
+i,
 output,
 ruby,
 section,
@@ -142,6 +142,17 @@ body {
 /*======== variables ========*/
 /*======= mixins =======*/
 /* ========= General stlyes ========= */
+p {
+  color: #5e5b5b;
+  font-size: 1.4rem;
+}
+h2 {
+  color: #5e5b5b;
+}
+hr {
+  width: 90%;
+}
+/* ======== Nested Style ======== */
 header {
   background-image: url('../images/forest.jpg');
   background-size: cover;
@@ -164,6 +175,11 @@ header nav a {
   padding: 0.3%;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  header nav {
+    background: red;
+  }
+}
 header section {
   font-size: 2rem;
   text-align: center;
@@ -180,9 +196,11 @@ header section {
   align-items: center;
   margin-right: 20%;
   line-height: 2;
+  color: #ccc9c9;
 }
 .header-content p {
   color: #ccc9c9;
+  font-size: 2.5rem;
 }
 .profile-image {
   width: 30%;
@@ -195,12 +213,101 @@ header section {
   margin-left: 10%;
 }
 .about-me {
-  border: 2px solid red;
+  border: 1px solid black;
+  background-color: #dddddd;
+  padding: 2%;
+  width: 90%;
+  margin: 2% auto;
+}
+.about-me h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.about-me p {
+  font-size: 1.2rem;
 }
 .skills-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  width: 90%;
+  font-weight: bold;
+  font-size: 2rem;
+  justify-content: center;
+}
+.skills-container section {
+  border: 2px solid black;
+  border-radius: 5%;
+  margin: 1%;
+  width: 30%;
+  height: 15rem;
+  text-align: center;
+  background-color: #dddddd;
+}
+.skills-container p {
+  margin-top: 3%;
+}
+.skills-heading {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2%;
+  margin-left: 5.3%;
+  margin-bottom: 2%;
+  text-decoration: underline;
+}
+.employment-heading {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 5.3%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  text-decoration: underline;
+}
+.employment-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: center;
+}
+.employment-container section {
+  padding-top: 2.5%;
+  text-align: center;
+  border: 2px solid black;
+  width: 30%;
+  height: 5rem;
+}
+.contact-heading {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 5.3%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  text-decoration: underline;
+}
+.contact {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: center;
+}
+.contact address {
+  width: 30%;
+  line-height: 2;
+}
+.contact footer {
+  border: 2px solid red;
+}
+.contact section {
   border: 2px solid red;
 }
 /* ===== Psuedo Styles */
 a:hover {
   opacity: 0.5;
+}
+i {
+  font-size: 15rem;
 }
