@@ -165,7 +165,12 @@ header nav {
   display: flex;
   justify-content: flex-end;
 }
-header nav a {
+@media (max-width: 500px) {
+  header nav {
+    justify-content: center;
+  }
+}
+header a {
   font-size: 1.5rem;
   color: #ccc9c9;
   border: 1px solid white;
@@ -176,11 +181,11 @@ header nav a {
   text-decoration: none;
 }
 @media (max-width: 500px) {
-  header nav {
-    background: red;
+  header a {
+    color: black;
   }
 }
-header section {
+section {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 1%;
@@ -190,6 +195,11 @@ header section {
   margin: 3%;
   border: 2px solid black;
 }
+@media (max-width: 500px) {
+  .wrapper {
+    margin: 0;
+  }
+}
 .header-content {
   display: flex;
   justify-content: space-around;
@@ -197,6 +207,11 @@ header section {
   margin-right: 20%;
   line-height: 2;
   color: #ccc9c9;
+}
+@media (max-width: 500px) {
+  .header-content section {
+    margin-left: 20%;
+  }
 }
 .header-content p {
   color: #ccc9c9;
@@ -206,6 +221,11 @@ header section {
   width: 30%;
   margin-bottom: 4%;
   margin-left: 2%;
+}
+@media (max-width: 500px) {
+  .profile-image {
+    display: none;
+  }
 }
 .profile-image img {
   width: 100%;
@@ -237,6 +257,11 @@ header section {
   font-size: 2rem;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .skills-container {
+    flex-direction: column;
+  }
+}
 .skills-container section {
   border: 2px solid black;
   border-radius: 5%;
@@ -245,6 +270,12 @@ header section {
   height: 15rem;
   text-align: center;
   background-color: #dddddd;
+}
+@media (max-width: 500px) {
+  .skills-container section {
+    width: 100%;
+    margin-top: 5%;
+  }
 }
 .skills-container p {
   margin-top: 3%;
@@ -276,7 +307,7 @@ header section {
   padding-top: 2.5%;
   text-align: center;
   border: 2px solid black;
-  width: 30%;
+  width: 33%;
   height: 5rem;
 }
 .contact-heading {
@@ -293,21 +324,21 @@ header section {
   flex-wrap: wrap;
   padding: 2%;
   justify-content: center;
+  text-align: center;
 }
 .contact address {
   width: 30%;
   line-height: 2;
 }
-.contact footer {
-  border: 2px solid red;
-}
-.contact section {
-  border: 2px solid red;
+footer {
+  border: 2px solid black;
+  height: 5rem;
+  text-align: center;
 }
 /* ===== Psuedo Styles */
 a:hover {
   opacity: 0.5;
 }
 i {
-  font-size: 15rem;
+  font-size: 10rem;
 }
