@@ -69,8 +69,8 @@ html, body {
 
 
 /*======== variables ========*/
-@titleColors: rgb(204, 201, 201);
-@bodyColors: rgb(94, 91, 91);
+@titleColors: rgba(255, 255, 255, 0.979);
+@bodyColors: black;
 
 /*======= mixins =======*/
 .flex(){
@@ -97,10 +97,12 @@ html, body {
 p {
 	color: @bodyColors;
 	font-size: 1.4rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 {
 	color: @bodyColors;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -136,10 +138,11 @@ nav {
 
 		@media (max-width: 500px){
 			color: black;
+			border: 3px solid black;
 		   }
 		font-size: 1.5rem;
 		color: @titleColors;
-		border: 1px solid white;
+		border: 3px solid white;
 		border-radius: 8%;
 		margin-right: 2%;
 		margin-top: 2%;
@@ -224,9 +227,10 @@ section {
 
 .about-me {
 	border: 1px solid black;
-	background-color: rgb(221, 221, 221);
+	background-color: rgb(238, 237, 237);
 	padding: 2%;
 	width: 90%;
+	box-shadow: 1rem 1rem 1rem grey;
 	.center();
 
 	
@@ -246,11 +250,6 @@ section {
 }
 
 .skills-container {
-	// margin: 0 auto;
-	// display: flex;
-	// flex-wrap: wrap;
-	// padding: 2%;
-
 	@media (max-width: 500px){
      flex-direction: column;
 	}
@@ -271,11 +270,14 @@ section {
 		
 		border: 2px solid black;
 		border-radius: 5%;
-		margin:  1%;
-		width: 30%;
-		height: 15rem;
+		margin:  3%;
+
+		width: 40%;
+		height: 20rem;
 		text-align: center;
-		background-color: rgb(221, 221, 221);
+		background-color: rgb(238, 237, 237);
+		box-shadow: 1rem 2rem 1rem grey;
+		
 
 		
 	}
@@ -313,7 +315,7 @@ section {
 
 	section {
 		padding-top:2.5%;
-		
+		background-color: rgb(238, 237, 237);
 		text-align: center;
 		border: 2px solid black;
 		width:33%;
@@ -347,10 +349,12 @@ address {
 }
 
 footer {
-	
-	border: 2px solid black;
+	background-color: rgb(238, 237, 237);
+	border-top: 2px solid black;
 	height: 5rem;
 	text-align: center;
+	padding-top: 2%;
+	 
 }
 
 
@@ -368,6 +372,8 @@ a:hover  {
 
 i {
 	font-size: 10rem;
+	max-width: 100%;
+	margin-top: 10%;
 	
 }
 
